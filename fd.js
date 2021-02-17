@@ -1,11 +1,9 @@
 var body = $response.body; // 声明一个变量body并以响应消息体赋
-var url=$request.url;
+let url=$request.url;
 
 //console.log(url+":"+body);
 
-if(url.endsWith("getInfo")){
-	let obj = JSON.parse(body);
-	obj.data.vip={
+var vip={
             "cards":
             {
                 "vip":
@@ -75,13 +73,20 @@ if(url.endsWith("getInfo")){
             "special_desc": "听书权益全新上线",
             "vip_end_time": "2099-03-17 18:31:03"
         };
+
+if(url.endsWith("getInfo")){
+	let obj = JSON.parse(body);
+	var data=obj.data;
+	console.log(JSON.stringify(data));
+	var vip=data.vip;
+	console.log(JSON.stringify(vip));
 	body = JSON.stringify(obj); // 重新打包回json字符串
 	console.log("修改后："+data);
 }
 
-if(url.endsWith("getAds")){
-	let obj = JSON.parse(body);
-	body = JSON.stringify(obj); // 重新打包回json字符串
-}
+// if(url.endsWith("getAds")){
+// 	let obj = JSON.parse(body);
+// 	body = JSON.stringify(obj); // 重新打包回json字符串
+// }
 
 $done(body); // 结束修改
