@@ -78,10 +78,11 @@ if(url.endsWith("getInfo")){
 	let obj = JSON.parse(body);
 	var data=obj.data;
 	console.log(JSON.stringify(data));
-	var vip=data.vip;
-	console.log(JSON.stringify(vip));
+	var vipin=data.vip;
+	console.log(JSON.stringify(vipin));
+	vipin=vip;
 	body = JSON.stringify(obj); // 重新打包回json字符串
-	console.log("修改后："+data);
+	console.log("修改后："+body);
 }
 
 // if(url.endsWith("getAds")){
