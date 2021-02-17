@@ -16,6 +16,8 @@ if(url.endsWith("getAds")){
 	obj.data.ids=[];
 	obj.data.adsEmbedType="0";
 	obj.data.show_position="0";
+	obj.data.status="0";
+	obj.data.code="";
 	body = JSON.stringify(obj); // 重新打包回json字符串
 }
 
