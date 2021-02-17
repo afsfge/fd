@@ -1,7 +1,7 @@
 var body = $response.body; // 声明一个变量body并以响应消息体赋
 let url=$request.url;
 
-//console.log(url+":"+body);
+console.log(url+":"+body);
 
 var vip={
 			"card_id": "3000001262666877",
