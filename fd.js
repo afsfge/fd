@@ -1,9 +1,11 @@
 var body = $response.body; // 声明一个变量body并以响应消息体赋
-let url=$request.url;
+var url=$request.url;
 
 //console.log(url+":"+body);
 
-var vip={
+if(url.endsWith("getInfo")){
+	let obj = JSON.parse(body);
+	obj.data.vip={
             "cards":
             {
                 "vip":
@@ -73,10 +75,6 @@ var vip={
             "special_desc": "听书权益全新上线",
             "vip_end_time": "2099-03-17 18:31:03"
         };
-
-if(url.endsWith("getInfo")){
-	let obj = JSON.parse(body);
-	obj.data.vip=vip;
 	body = JSON.stringify(obj); // 重新打包回json字符串
 	console.log("修改后："+data);
 }
