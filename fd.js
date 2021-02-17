@@ -12,11 +12,6 @@ if(url.endsWith("getInfo")){
 
 if(url.endsWith("getAds")){
 	var obj = JSON.parse(body);
-	obj.data.hideDay="1000";
-	obj.data.ids=[];
-	obj.data.adsEmbedType="2";
-	obj.data.show_position="2";
-	obj.data.status="2";
 	body = JSON.stringify(obj); // 重新打包回json字符串
 }
 
