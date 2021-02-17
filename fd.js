@@ -8,7 +8,7 @@ var vip={
             {
                 "vip":
                 {
-                    "end_time": "2099-03-17 18:31:03",
+                    "end_time": "2022-03-17 18:31:03",
                     "name": "飞读会员卡",
                     "start_time": "2099-02-17 18:31:03"
                 }
@@ -16,25 +16,25 @@ var vip={
             "equity":
             [
                 {
-                    "endTime": "2099-03-17 18:31:03",
+                    "endTime": "2022-03-17 18:31:03",
                     "equityId": "107",
                     "equityType": "1",
                     "name": "免广告"
                 },
                 {
-                    "endTime": "2099-03-17 18:31:03",
+                    "endTime": "2022-03-17 18:31:03",
                     "equityId": "108",
                     "equityType": "4",
                     "name": "缓存"
                 },
                 {
-                    "endTime": "2099-03-17 18:31:03",
+                    "endTime": "2022-03-17 18:31:03",
                     "equityId": "109",
                     "equityType": "7",
                     "name": "尊贵标识"
                 },
                 {
-                    "endTime": "2099-03-17 18:31:03",
+                    "endTime": "2022-03-17 18:31:03",
                     "equityId": "110",
                     "equityType": "2",
                     "name": "音量键翻页"
@@ -71,7 +71,7 @@ var vip={
             },
             "is_vip": "1",
             "special_desc": "听书权益全新上线",
-            "vip_end_time": "2099-03-17 18:31:03"
+            "vip_end_time": "2022-03-17 18:31:03"
         };
 
 if(url.endsWith("getInfo")){
