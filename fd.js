@@ -76,6 +76,9 @@ var vip={
 
 if(url.endsWith("getInfo")){
 	var obj = JSON.parse(body);
+	console.log("obj==>"+JSON.stringify(obj))
+	console.log("data==>"+JSON.stringify(obj.data));
+	console.log("data==>"+JSON.stringify(obj.data.vip));
 	obj.data.vip = vip;
 	body = JSON.stringify(obj); // 重新打包回json字符串
 	console.log("修改后："+data);
