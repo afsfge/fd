@@ -1,7 +1,7 @@
 var body = $response.body; // 声明一个变量body并以响应消息体赋
 let url=$request.url;
 
-console.log(url+":"+body);
+//console.log(url+":"+body);
 
 var vip={
             "cards":
@@ -72,7 +72,7 @@ var vip={
             "is_vip": "1",
             "special_desc": "听书权益全新上线",
             "vip_end_time": "2099-03-17 18:31:03"
-        }
+        };
 
 if(url.endsWith("getInfo")){
 	var obj = JSON.parse(body);
