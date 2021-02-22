@@ -96,4 +96,11 @@ if(url.endsWith("getAds")){
 	body = JSON.stringify(obj); // 重新打包回json字符串
 }
 
+if(url.endsWith("hapterEndV2")){
+	let obj = JSON.parse(body);
+	obj.data=[];
+	body = JSON.stringify(obj); // 重新打包回json字符串
+}
+
+
 $done(body); // 结束修改
